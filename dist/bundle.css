@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+#container {
+  width: 320px;
+  font: 500 16px/1.5 monospace; }
+  #container input {
+    font: 500 16px monospace;
+    border: solid 1px #ddd; }
+  #container select {
+    font: 500 16px monospace;
+    border: solid 1px #ddd; }
+  #container table {
+    font: 500 12px monospace; }
+  #container #divParentM {
+    margin: 4px;
+    padding: 4px;
+    background: #def; }
+  #container #divParentF {
+    margin: 4px;
+    padding: 4px;
+    background: #fde; }
+  #container #divParentOther {
+    margin: 4px;
+    padding: 4px;
+    background: #edf; }
+  #container #divShiny {
+    margin: 4px;
+    padding: 4px;
+    background: #dfe; }
+  #container #divFilter {
+    margin: 4px;
+    padding: 4px;
+    background: #eee; }
+  #container #divGo {
+    margin: 4px;
+    padding: 4px; }
+  #container #rngSeed {
+    width: 300px; }
+  #container #targetGuide {
+    margin: 4px;
+    padding: 4px; }
+  #container #eggTableContainer {
+    margin: 4px;
+    padding: 4px;
+    overflow: scroll; }

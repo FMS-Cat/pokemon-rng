@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=320" />
+<title></title>
+
+<body>
+  <div id="container">
+    <div id="divParentM">
+      Parent Male<br />
+      H <input id="parentMIV0" type="number" min=0 max=31 value=31 /></select>
+      A <input id="parentMIV1" type="number" min=0 max=31 value=31 /></select>
+      B <input id="parentMIV2" type="number" min=0 max=31 value=31 /></select>
+      C <input id="parentMIV3" type="number" min=0 max=31 value=31 /></select>
+      D <input id="parentMIV4" type="number" min=0 max=31 value=31 /></select>
+      S <input id="parentMIV5" type="number" min=0 max=31 value=31 /></select>
+      <br />
+      Item: <select id="parentMItem">
+        <option value="0">None</option>
+        <option value="1">Everstone</option>
+        <option value="2">Destiny Knot</option>
+        <option value="3">Power Weight</option>
+        <option value="4">Power Bracer</option>
+        <option value="5">Power Belt</option>
+        <option value="6">Power Lens</option>
+        <option value="7">Power Band</option>
+        <option value="8">Power Anklet</option>
+      </select><br />
+      Ability: <select id="parentMAbility">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">H</option>
+      </select><br />
+      Ditto: <input id="parentMDitto" type="checkbox" />
+    </div>
+
+    <div id="divParentF">
+      Parent Female<br />
+      H <input id="parentFIV0" type="number" min=0 max=31 value=31 /></select>
+      A <input id="parentFIV1" type="number" min=0 max=31 value=31 /></select>
+      B <input id="parentFIV2" type="number" min=0 max=31 value=31 /></select>
+      C <input id="parentFIV3" type="number" min=0 max=31 value=31 /></select>
+      D <input id="parentFIV4" type="number" min=0 max=31 value=31 /></select>
+      S <input id="parentFIV5" type="number" min=0 max=31 value=31 /></select>
+      <br />
+      Item: <select id="parentFItem">
+        <option value="0">None</option>
+        <option value="1">Everstone</option>
+        <option value="2">Destiny Knot</option>
+        <option value="3">Power Weight</option>
+        <option value="4">Power Bracer</option>
+        <option value="5">Power Belt</option>
+        <option value="6">Power Lens</option>
+        <option value="7">Power Band</option>
+        <option value="8">Power Anklet</option>
+      </select><br />
+      Ability: <select id="parentFAbility">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">H</option>
+      </select><br />
+      Ditto: <input id="parentFDitto" type="checkbox" />
+    </div>
+
+    <div id="divParentOther">
+      Different Species: <input id="parentDiff" type="checkbox" /><br />
+      Masuda Method: <input id="parentMasuda" type="checkbox" /><br />
+      Gender Ratio: <select id="parentGender">
+        <option value="0">M1:F1</option>
+        <option value="1">M7:F1</option>
+        <option value="2">M3:F1</option>
+        <option value="3">M1:F3</option>
+        <option value="4">M Only</option>
+        <option value="5">F Only</option>
+        <option value="6">Genderless</option>
+      </select>
+    </div>
+
+    <div id="divShiny">
+      Shiny Charm: <input id="shinyCharm" type="checkbox" /><br />
+      Shiny TSV: <input id="shinyTSV" type="number" min=0 max=4095 value=0 /><br />
+    </div>
+
+    <div id="divFilter">
+      H: <input id="filterIV0S" type="number" min=0 max=31 value=0 /> ~ <input id="filterIV0E" type="number" min=0 max=31 value=31 /><br />
+      A: <input id="filterIV1S" type="number" min=0 max=31 value=0 /> ~ <input id="filterIV1E" type="number" min=0 max=31 value=31 /><br />
+      B: <input id="filterIV2S" type="number" min=0 max=31 value=0 /> ~ <input id="filterIV2E" type="number" min=0 max=31 value=31 /><br />
+      C: <input id="filterIV3S" type="number" min=0 max=31 value=0 /> ~ <input id="filterIV3E" type="number" min=0 max=31 value=31 /><br />
+      D: <input id="filterIV4S" type="number" min=0 max=31 value=0 /> ~ <input id="filterIV4E" type="number" min=0 max=31 value=31 /><br />
+      S: <input id="filterIV5S" type="number" min=0 max=31 value=0 /> ~ <input id="filterIV5E" type="number" min=0 max=31 value=31 /><br />
+      Nature: <select id="filterNature">
+        <option value="Any">Any</option>
+        <!-- Added by script -->
+      </select><br />
+      Ability: <select id="filterAbility">
+        <option value="Any">Any</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="H">H</option>
+      </select><br />
+      Gender: <select id="filterGender">
+        <option value="Any">Any</option>
+        <option value="M">M</option>
+        <option value="F">F</option>
+      </select><br />
+      Ball: <select id="filterBall">
+        <option value="Any">Any</option>
+        <option value="M">M</option>
+        <option value="F">F</option>
+      </select><br />
+      Hidden: <select id="filterHidden">
+        <option value="Any">Any</option>
+        <!-- Added by script -->
+      </select><br />
+      Shiny: <input id="filterShiny" type="checkbox" /><br />
+      <br />
+      Range: <input id="rangeS" type="number" min=0 max=99999999 value=0 /> ~ <input id="rangeE" type="number" min=0 max=99999999 value=100 /><br />
+      Disable Filters: <input id="disableFilters" type="checkbox" />      
+    </div>
+
+    <div id="divGo">
+      seed: <br />
+      <input id="rngSeed" /><br />
+      Target frame: <input id="targetFrame" type="number" min="0" max="99999999" value="0" /><br />
+
+      <input id="buttonGo" type="button" value="Go" />
+      <input id="buttonRej" type="button"value="Reject" />
+      <input id="buttonAcc" type="button" value="Accept" />
+      <br />
+
+      <input id="buttonAirhorn" type="button" value="airhorn.wav" />
+    </div>
+
+    <hr />
+
+    <div id="targetGuide">GOTTA GO FAST</div>
+    <div id="eggTableContainer">
+      <table id="eggTable" border=1 cellspacing="0" cellpadding="2"></table>
+    </div>
+
+  </div>
+</body>
+
+<link rel="stylesheet" type="text/css" href="bundle.css">
+<script src="bundle.js"></script>
